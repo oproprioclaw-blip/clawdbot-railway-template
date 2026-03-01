@@ -1,0 +1,7 @@
+providers = ["node", "python"]
+
+[phases.setup]
+nixPkgs = ["...", "ffmpeg", "git", "wget", "python311"]
+
+[phases.install]
+cmds = ["npm install", "pip install -U pip setuptools"]
